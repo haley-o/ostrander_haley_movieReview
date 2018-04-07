@@ -5,65 +5,8 @@
 	// erroe_reporting(E_ALL);
 
 	require_once('admin/phpscripts/config.php');
-	confirm_logged_in();
+	// confirm_logged_in();
 
-
-
-	// $date = date_create("Canada/Eastern");
-	// 	echo date_format($date, 'Y-m-d h:i:sa');
-
-// is there an easier way to do this connection??
-
-	$user = "root";
-	$pass = "";
-	$url = "localhost";
-	$db = "db_movies";
-
-	$link = mysqli_connect($url, $user, $pass, $db); 
-	
-	/* check connection */ 	
-	if(mysqli_connect_errno()) {
-		printf("Connect failed: %s\n", mysqli_connect_error());
-		exit();
-	}
-
-	// creating a query to grab our table, and set the users last loging to be the current time
-	$lastLogin = "UPDATE `tbl_user` SET `user_lastLogin` = now()  WHERE user_id=1";
-	// echo $lastLogin;
-
-	// $loginAttempts = "UPDATE `tbl_user` SET `user_attempts` = user_attempts + 1 WHERE user_id = 1";
-		// echo $loginAttempts;
-
-	// This is updating our most recent login time into the database 
-	if(mysqli_multi_query($link, $lastLogin)){
-	    // echo "woo it works";
-	} else {
-	    echo "Boo you broke it" . mysqli_error($link);
-	}
-
-	// if(mysqli_multi_query($link, $loginAttempts)){
-	//     // echo "woo it works";
-	// } else {
-	//     echo "Boo you broke it" . mysqli_error($link);
-	// }
-
-	// Time greeting
-	//this is setting our timezone
-	// date_default_timezone_set('Canada/Eastern');
-
-	// //creating a variable for hour and setting it to the hour format we want, 24 hours seems easiest to deal with
-	// $Hour = date('G'); //24-hour format of an hour (0 to 23)
-
-	// // setting if statments and then echoing out our message, if the hour is greater than our equal to *insert number* AND is less than and equal to *insert new hour* the message will echo
-	// if ( $Hour >= 5 && $Hour <= 11 ) {
-	//     echo "<h2 class='time-message'>Enjoy an early morning cartoon</h2>";
-	// } else if ( $Hour >= 12 && $Hour <= 18 ) {
-	//     echo "<h2 class='time-message'>Having a lazy day?</h2>";
-	// } else if ( $Hour >= 19 || $Hour <= 4 ) {
-	//     echo "<h2 class='time-message'>Enjoy a late night spooky film</h2>";
-	// }
-
-	// mysqli_close($link);
 
 	// require_once('admin/phpscripts/config.php');
 	if(isset($_GET['filter'])){
@@ -107,7 +50,6 @@
 	</ul> -->
 
 	<div class="welcome-con">
-		<?php echo"<h2 id='welcome-tagline'>Hi {$_SESSION['user_name']}</h2>"; ?>
 		<h1 id="welcome-title">Pick a Movie to Watch</h1>
 
 		<div class="edit-con">
