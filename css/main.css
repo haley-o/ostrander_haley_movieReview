@@ -1,0 +1,288 @@
+
+/* LOGIN PAGE*/
+
+#login-page {
+	background: linear-gradient(to bottom right, #6254a9, #839de2);
+	height: 100vh;
+}
+
+h1, p, label, input {
+	color: white;
+	margin-bottom: 25px;
+}
+
+
+h2 {
+	color: white;
+    font-size: 21px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+#login-title {
+	font-size: 41px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#tagline {
+	padding-bottom: 45px;
+	font-size: 21px;
+	text-align: center;
+	font-style: italic;
+}
+
+.login-con {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+input {
+	float: left;
+	clear: both;
+	width: 100%;
+	border: 0; 
+	padding-bottom: 10px; 
+	margin-right: 0.5%; 
+}
+
+.login-input {
+    height: 25px;
+    color: white;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 25px;
+}
+
+label{
+	float: left;
+	text-align: center;
+	width: 100%;
+	font-size: 21px;
+}
+
+.submit-bttn {
+	padding: 10px;
+	color: #6254a9;
+	cursor: pointer;
+}
+
+/* WELCOME PAGE */
+
+#welcome-page {
+	background: linear-gradient(to top right, #622d44, #eeb975);
+	/*height: 100vh;*/
+	display: block;
+    overflow: hidden;
+}
+
+.welcome-con {
+	position: absolute;
+	/*top: 50%;*/
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	margin-top: 50px;
+	width: 100%;
+}
+
+#welcome-title {
+	font-size: 21px;
+	text-align: center;
+	font-style: italic;
+	padding-bottom: 25px;
+}
+
+#welcome-tagline {
+	font-size: 36px;
+	color: white;
+	padding-bottom: 25px;
+}
+
+.time-message {
+	position: absolute;
+	color: white;
+	font-size: 24px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-shadow: 0 0 3px #fec632;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Create User Page */
+
+.createuser-page {
+	background: linear-gradient(to top right, #10848a, #4ed0e8);
+	height: 100vh;
+}
+
+.createuser-contentCon {
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#createuser-bttn {
+	margin-top: 25px;
+}
+
+#createuser-title {
+	font-size: 36px;
+	padding-bottom: 45px;
+}
+
+select {
+	width: 100%;
+	height: 35px;
+	color: #6254a9;
+	margin-top: 5px;
+}
+
+a {
+	color: white;
+	font-size: 18px !important;
+	float: left;
+    width: 100%;
+    clear: both;
+}
+
+#createuser {
+	text-align: center;
+}
+
+#password-input {
+	display: none;
+}
+
+/* DELETE PAGE */
+
+.deleteuser-page {
+	background: linear-gradient(to top right, #f5e3ba, #ed864e);
+	height: 100vh;
+}
+
+.deleteuser-contentCon {
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#deleteuserName {
+	font-size: 24px !important;
+	color: white;
+}
+
+#deleteuser {
+	font-size: 24px !important;
+	color: red;
+	padding-bottom: 25px;
+}
+
+img {
+	width: 80%;
+	/*float: left;*/
+}
+
+.edit-con {
+    top: 0;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+.filterNav {
+	list-style: none;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.movie-con {
+	/*top: 20%;*/
+	margin-top: 250px;
+	padding-left: 50px;
+	padding-right: 25px;
+	/*padding-left: 20%;*/
+/*	position: relative;
+	width: 90%;
+    left: 50%;
+    transform: translateX(-50%);*/
+}
+
+.movieWrapper {
+	float: left;
+    position: relative;
+    width: 300px;
+}
+
+.movieWrapper:nth-child(4n + 1) {
+	clear: both;
+}
+
+.detailedImg {
+	width: 30%;
+	float: left;
+}
+
+.detailed-con {
+	background-color: gray;
+   /* width: 100%;
+    height: 100vh;
+    position: absolute;*/
+    overflow: hidden;
+    display: block;
+}
+
+.detailed-movie-con {
+	width: 80%;
+    /*left: 50%;
+    transform: translateX(-50%);
+    position: absolute;*/
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.detailText {
+	float: left;
+	padding-left: 50px;
+	width: 40%;
+}
+
+#back-button {
+	padding-top: 25px;
+	padding-left: 50px;
+}
+
+#edit-button {
+	padding-left: 50px;
+	padding-top: 15px;
+}
+
+.review-con {
+	width: 25%;
+    position: relative;
+    float: left;
+    clear: both;
+    top: 70%;
+    left: 150px;
+    padding-top: 25px;
+}
+
+input {
+	color: black;
+	margin-bottom: 10px !important;
+}
